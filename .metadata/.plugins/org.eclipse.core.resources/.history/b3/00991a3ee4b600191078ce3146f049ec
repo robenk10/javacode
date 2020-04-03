@@ -1,0 +1,19 @@
+package juneb_testN05;
+
+public class Testno_5
+{
+	public static void main(String[] args)
+	{
+
+
+		String str1 = "something";
+		String str2 = str1.intern();
+		String str3 = new String("something");
+		System.out.println(str3.hashCode());
+		String str4 = str1.intern();
+		System.out.println(str1 == str3);
+		System.out.println(str1.hashCode() + "\n"+str3.hashCode());
+		System.out.println(str1.equals(str3));
+	}
+
+}

@@ -1,0 +1,38 @@
+package inheritanceusingAbstractclass;
+
+abstract class Machine
+{    
+	int i=10;
+	public void rotate()
+	{
+		System.out.println("in abstract class Machine method rotate");
+	}
+	abstract public void crush();
+
+}
+class Juicer extends  Machine
+{   
+	int i=15;
+	public void crush()
+	{
+		System.out.println("in class Juicer method crush");
+	}
+	public void filter()
+	{
+		System.out.println("in class Juicer method filter");
+	}
+}
+abstract class Mixer extends Machine
+{
+	public void crush()
+	{
+		System.out.println("in abstract class Mixer method Mixer");
+	}
+	public void blend() 
+	{
+		System.out.println("in abstract class Mixer method blend");
+	}
+}
+public class InheritanceusingAbstractclassDemo {
+
+}

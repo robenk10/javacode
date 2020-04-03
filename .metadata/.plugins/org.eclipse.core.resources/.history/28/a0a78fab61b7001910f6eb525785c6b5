@@ -1,0 +1,25 @@
+package stringDay3;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Concanate two string***");
+		String str1="robin";
+		String str2="Kedari";
+		String str3=str1.concat(str2);
+		System.out.println(str3.hashCode());
+		String str4=str1.concat("kedari");
+		String str5=new String ("kedari");
+		String str6="robin".concat(str5);
+		System.out.println(str4.hashCode());
+		System.out.println(str5.hashCode());
+		System.out.println(str6.hashCode());
+		System.out.println(str3==str4);
+		System.out.println(str5==str2);
+		System.out.println(str6==str4);
+        
+		System.out.println(str4.toUpperCase());
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.TechnicalInterviewQ;
+
+public class AddTwoStringInteger {
+
+	public static String addString(String num1, String num2) {
+		StringBuilder result = new StringBuilder();
+		int i=num1.length()-1;
+		int j=num2.length()-1;
+		int cary=0;
+		while(i>=0 || j>=0) {
+			int sum=cary;
+			if(i>=0) {
+				sum +=num1.charAt(i--)-'0';
+			}
+			if(j>=0) {
+				sum += num2.charAt(j--)-'0';
+			}
+			result.append(sum%10);
+			cary=sum/10;
+		}
+		
+		if(cary!=0) {
+			result.append(cary);
+		}
+		
+		return result.reverse().toString();
+	}
+	public static void main(String[] args) {
+		
+		String s="123";
+		String s1="1234";
+		
+		System.out.println(addString(s,s1));
+	
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package exceptiondemo;
+
+public class Demoexception1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          
+		int i,j,k;
+		i=8;
+		j=2;
+		k=i/j;
+		System.out.println(k);
+	}
+
+}

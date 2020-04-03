@@ -1,0 +1,12 @@
+package stringDay4;
+
+public class Extrablankspaces {
+
+	public static void main(String[] args) {
+		String str="java programming  lang  is  the most popular   lang  ";
+		String str1=str.replaceFirst("\\s", " ");
+		System.out.println(str1);
+
+	}
+
+}

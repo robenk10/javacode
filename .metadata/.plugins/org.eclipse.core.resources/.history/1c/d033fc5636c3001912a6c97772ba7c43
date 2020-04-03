@@ -1,0 +1,26 @@
+package stringDay4;
+
+public class CountvowelsandConsonent {
+
+	public static void main(String[] args) {
+		String str="hi my name is anthony nice to meet you";
+		char[] carr=str.toCharArray();
+		int counter=0;
+		int counter1=0;
+		for(int i=0;i<carr.length;i++)
+		{
+			if(carr[i]=='a' || carr[i]=='e' || carr[i]=='o' || carr[i]=='u' || carr[i]=='i')
+			{
+				counter++;
+			}
+			else
+			{
+				counter1++;
+			}
+			
+		}
+		System.out.println("Total vowels in this string is " +counter+ "Total consonent of the String is " +counter1);
+
+	}
+
+}

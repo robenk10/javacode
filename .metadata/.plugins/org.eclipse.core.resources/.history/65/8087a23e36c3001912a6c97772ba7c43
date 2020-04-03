@@ -1,0 +1,10 @@
+package stringDay4;
+
+public class CountvowelsandConsonent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package stringDay3;
+
+public class Assignment3 
+{
+
+	public static void main(String[] args) 
+	{
+     String str1="Hello$world";
+     String[] str2=str1.split("[^a-z]");
+     System.out.println(str2.length);
+	}
+
+}

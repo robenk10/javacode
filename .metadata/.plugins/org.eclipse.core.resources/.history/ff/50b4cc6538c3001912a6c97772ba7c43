@@ -1,0 +1,20 @@
+package stringDay4;
+
+public class FindreverseOfString {
+
+	public static void main(String[] args) {
+		String str="programming";
+		char[] carr=str.toCharArray();
+		
+		for(int i=carr.length;i>=0;i--)
+		{
+			carr[i]=str.charAt(i);
+			
+		}
+		for(int j:carr)
+		{
+			System.out.println(j);
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package stringDay4;
+
+public class Extrablankspaces {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

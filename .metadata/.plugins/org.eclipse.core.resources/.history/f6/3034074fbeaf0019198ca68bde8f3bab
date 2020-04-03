@@ -1,0 +1,53 @@
+package array_Of_Object1;
+
+import java.util.Scanner;
+
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+       Studentu_get_set[] s=new Studentu_get_set[3];
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Please Enter the details");
+       String cname;
+       for(int i=0;i<s.length;i++)
+       {
+    	  
+    	
+    	   s[i]=new Studentu_get_set();
+    	   System.out.println("Enter the Student ID::");
+    	   int n=sc.nextInt();
+    	   s[i].setStudId(n);
+    	   System.out.println("Enter the Student Name::");
+    	   String ss=sc.next();
+    	   s[i].setStudName(ss);
+    	   System.out.println("Enter the Student marks::");
+    	   int m=sc.nextInt();
+    	   s[i].setMark(m);
+    	   s[i].setC(new Course());
+    	   System.out.println("Enter the Course ID::");
+    	   int cid=sc.nextInt();
+    	   s[i].getC().setcId(cid);
+    	   System.out.println("Enter the Course name::");
+    	   cname=sc.next();
+    	   s[i].getC().setcName(cname);
+    	   System.out.println("Enter the Course Fees::");
+    	   float fees=sc.nextFloat();
+    	   s[i].getC().setFees(fees);
+    	   
+       }
+       for(int i=0;i<s.length;i++)
+       {   if(s[i].cname)
+    	   System.out.println(s[i]);
+       }
+       
+     
+	}
+	  public boolean m1()
+      {  
+		  boolean flag=false;
+		  if(cname.)
+		return false;
+   	   
+      }
+}

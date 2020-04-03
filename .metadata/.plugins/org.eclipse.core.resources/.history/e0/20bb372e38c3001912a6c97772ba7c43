@@ -1,0 +1,15 @@
+package stringDay4;
+
+public class FindreverseOfString {
+
+	public static void main(String[] args) {
+		String str="programming";
+		
+		for(int i=str.length();i>=0;i++)
+		{
+			System.out.println(str.charAt(i));
+			
+		}
+	}
+
+}

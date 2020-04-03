@@ -1,0 +1,29 @@
+package conditoinalOperatorswitchcaseAssignment;
+import java.util.*;
+public class Higher {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the first number:");
+		int num1=sc.nextInt();
+		System.out.println("enter the second number:");
+		int num2=sc.nextInt();
+		int f;
+		if(num1>num2)
+		 	f=1;
+		else
+			f=2;
+		switch(f)
+		{
+		case 1:
+			System.out.println(num1 +"this is highest");
+		case 2:
+			System.out.println(num2 +"this is highest");
+		}
+	
+	
+	}
+	
+
+}

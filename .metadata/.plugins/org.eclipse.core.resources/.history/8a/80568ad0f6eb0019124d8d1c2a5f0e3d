@@ -1,0 +1,54 @@
+package looping;
+
+import java.util.Scanner;
+
+public class FreqencyOfEachDigit {
+
+	public static void main(String[] args) {
+
+		//Write a Java program to find frequency of each digit in a given integer.
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+
+		int d,cnt=0,prevno=0;
+		int numb=num;
+
+		while(num>0)
+		{  
+
+			cnt=0;
+			d=num%10;
+			num=num/10;
+			numb=num;
+			{
+				int n=d;
+				while(n>0)
+				{
+				
+					
+					d=numb%10;
+					if(n==d)
+					{
+						cnt++;
+						
+					}
+					if(cnt>0)
+					{
+						System.out.println(n+" "+cnt);
+					}
+					n=0;
+					
+				}
+
+			}
+			
+
+
+		}
+
+
+	}
+
+}

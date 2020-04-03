@@ -1,0 +1,28 @@
+package com.ArrayListAssignment;
+
+import java.util.ArrayList;
+
+public class EmptyArrayLIst {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<String> al=new ArrayList();
+		al.add("green");
+		al.add("red");
+		al.add("yellow");
+		al.add("how");
+		al.add("green");
+		al.add("red");
+		al.add("yellow");
+		
+		
+		al.removeAll(al);
+		
+	    for( String e:al)
+	    {
+	    	System.out.println(e);
+	    }
+	}
+
+}

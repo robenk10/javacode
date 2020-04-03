@@ -1,0 +1,12 @@
+package inheritanceusingAbstractclass;
+
+abstract public class Machine 
+{
+   public void rotate()
+   {
+	   
+   }
+   abstract public void crush();
+   
+}
+

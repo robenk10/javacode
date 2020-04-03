@@ -1,0 +1,15 @@
+package stringDay3;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Concanate two string***");
+		String str1="robin";
+		String str2="Kedari";
+		String str3=str1.concat(str1);
+		System.out.println(str3);
+
+	}
+
+}

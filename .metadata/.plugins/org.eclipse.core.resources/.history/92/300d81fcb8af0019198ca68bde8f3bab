@@ -1,0 +1,27 @@
+package array_Of_Object1;
+
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+       Studentu_get_set[] s=new Studentu_get_set[3];
+       for(int i=0;i<s.length;i++)
+       {
+    	  
+    	
+    	   s[i]=new Studentu_get_set();
+    	   s[i].setStudId(1);
+    	   s[i].setStudName("Robin");
+    	   s[i].setMark(78);
+    	   s[i].setC(new Course());
+    	   s[i].getC().setcId(123);
+    	   s[i].getC().setcName("Computer_Science");
+    	   s[i].getC().setFees(40000.00f);
+    	   
+       }
+       for(int i=0;i<s.length;i++)
+       {
+    	   System.out.println(s[i]);
+       }
+	}
+}

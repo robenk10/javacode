@@ -1,0 +1,30 @@
+package stringDay4;
+
+public class TogglechaseOf {
+
+	public static void main(String[] args) 
+	{
+		String str="robin kedari";
+		char[] carr=str.toCharArray();
+		for(int i=0;i<carr.length;i++)
+		{
+		   if(carr[i]>='A' && carr[i]<='Z')
+		   {
+			   carr[i]=(char) (carr[i]+32);
+			   
+		   }
+		   else if(carr[i]>='a' && carr[i]<='z')
+		   {
+			   carr[i]=(char) (carr[i]-32);
+		   }
+		   
+		}
+		for(char j:carr)
+		{
+			System.out.print(j);
+			
+		}
+
+	}
+
+}

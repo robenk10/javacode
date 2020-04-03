@@ -1,0 +1,15 @@
+package stringDay3;
+
+public class Assignment7 
+{
+
+	public static void main(String[] args) 
+	{
+		String str="java is java good java programming java language";
+		
+		String str1=str.join(" ",str);
+		System.out.println(str1);
+		
+	}
+
+}

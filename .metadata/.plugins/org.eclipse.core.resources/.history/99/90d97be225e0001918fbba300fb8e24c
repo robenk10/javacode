@@ -1,0 +1,32 @@
+package cloningMethod;
+
+public class Demo 
+{
+	public static void main(String arg[]) throws CloneNotSupportedException
+	{
+		Student s=new Student();
+		s.studId=10;
+		s.studName="Kabir Singh";
+		s.studMarks=85;
+		s.c=new Course();
+		s.c.Cid=1;
+		s.c.Cname="Angular";
+		Student s1=(Student)s.clone();
+		System.out.println(s1);
+		System.out.println(s);
+		s1.c.Cname="java";
+		s1.studName="robin";
+		s1.studMarks=50;
+		s1.studId=1234;
+		
+		System.out.println(s1);
+		System.out.println(s);
+		//System.out.println(s1.hashCode());
+		//System.out.println(s.hashCode());
+		s.c.Cid=9;
+		System.out.println(s1);
+		System.out.println(s);
+		
+	}
+
+}

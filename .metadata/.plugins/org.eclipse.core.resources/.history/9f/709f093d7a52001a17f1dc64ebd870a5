@@ -1,0 +1,57 @@
+package com.previousquetion;
+
+public class SpiralMatrix {
+
+	public static void main(String[] args) {
+		
+		int index=0;
+		
+		int left=0;
+		int top=0;
+		int right=5-1;
+		int bottom=5-1;
+		
+		int arr[][] =new int[4][4];
+		
+		while(true) {
+			
+			if(left>right) {
+				break;
+			}
+			for(int i=left;i<right; i++) {
+				arr[top][i]=index++;
+				System.out.print(arr[top][i]);
+			}
+			System.out.println();
+			top++;
+			if(top>bottom) {
+				break;
+			}
+			for(int j=top; j<bottom; j++) {
+				arr[j][right]=index++;
+				System.out.print(arr[j][right]);
+			}
+			System.out.println();
+			right--;
+			
+			if(right<left) {
+				break;
+			}
+			for(int j=right; j>left; j--) {
+				arr[bottom][j]=index++;
+			}
+			bottom--;
+			if(bottom>top) {
+				break;
+			}
+			for(int i=bottom; i>top; i--) {
+				arr[i][left]=index++;
+			}
+			left++;
+		}
+		
+		
+
+	}
+
+}

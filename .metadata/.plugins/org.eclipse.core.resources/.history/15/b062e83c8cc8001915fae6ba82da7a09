@@ -1,0 +1,38 @@
+package exceptiondemo;
+
+public class Demoexception1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i,j,k = 0;
+		int[] arr=new int[4];
+		i=8;
+		j=1;
+		try
+		{
+			k=i/j;
+			for(int c=0;c<=arr.length;c++)
+			{
+				arr[c]=c+1;
+			}
+			for(int value:arr)
+			{
+				System.out.println(value);
+			}
+		}
+
+		catch(ArithmeticException e)
+		{
+			System.out.println("cannot divide by zero");
+		}
+		
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("maximum size of array");
+		}
+		System.out.println(k);
+
+	}
+
+}

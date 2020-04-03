@@ -1,0 +1,19 @@
+package com.previousquetion;
+
+public class SpiralMatrix {
+
+	public static void main(String[] args) {
+		
+		int index=0;
+		
+		int left=0;
+		int top=0;
+		int right=5-1;
+		int bottom=5-1;
+		
+		
+		
+
+	}
+
+}

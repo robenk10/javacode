@@ -1,0 +1,32 @@
+package inheritanceusingAbstractclass;
+
+
+public class InheritanceusingAbstractclass 
+{
+    public static void main(String args[])
+    {   
+    	Juicer jc=new Juicer();
+    	jc.crush();
+    	jc.rotate();
+    	jc.filter();
+    	
+    	Machine m=new Juicer();
+    	//m.only crush ,and rotate methhod  we can  access
+    	m.crush();
+    	m.rotate();
+    	System.out.println(m.i);	
+   	//Abs1 abs=new Abs1();//Can we create an object of an abstract class
+    	
+    	//answer...We cannot because we dont want to create object thats why we use abstract keyword..
+    	
+ /**************************************************************/
+    	Child ch=new Child();
+    	ch.cook();
+    	ch.wash();
+    	
+    	Parent pt=new Child();
+    	
+    	
+    	
+    }
+}

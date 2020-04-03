@@ -1,0 +1,77 @@
+package com.FlipkartQ;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Order> al=new ArrayList();
+		
+		HashMap<String ,Integer> hs=new HashMap();
+		
+		Integer count=0;
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("details of Adding element");
+		for(int i=1;i<8;i++)
+		{ 
+			
+			int id=sc.nextInt();
+			String city=sc.next();
+			String itemName=sc.next();
+			String status=sc.next();
+			
+			al.add(new Order(id,city,itemName,status));
+		}
+		
+		Iterator itr= al.iterator();
+		
+		while(itr.hasNext())
+		{ 
+		
+			Order o=(Order) itr.next();
+		   String city=o.city;
+			String status=o.Status;
+			
+			if(status.equalsIgnoreCase("pending"))
+			{
+	         count++;
+			hs.put(city,count);
+			count=0;
+			}
+		}
+		
+		TreeMap <String ,Integer> tm=new TreeMap(hs);
+		
+        
+		Set s=tm.entrySet();
+		
+		Iterator itr1=s.iterator();
+		while(itr1.hasNext())
+		{
+			Map.Entry m=(Entry) itr1.next();
+				String s1=(String) m.getKey();
+				Integer i1=(Integer) m.getValue();
+				System.out.println(s1+"  "+"pending Order is::"+i1);
+				
+			
+		}
+		
+	
+		
+		 
+		
+	}
+
+}

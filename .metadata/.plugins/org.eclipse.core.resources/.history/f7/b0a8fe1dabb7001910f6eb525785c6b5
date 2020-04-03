@@ -1,0 +1,14 @@
+package stringDay3;
+
+public class Assignment6 
+{
+
+	public static void main(String[] args) 
+	{
+		String str1="    Core java   ";
+		String str2=str1.trim();
+		System.out.println(str2);
+
+	}
+
+}

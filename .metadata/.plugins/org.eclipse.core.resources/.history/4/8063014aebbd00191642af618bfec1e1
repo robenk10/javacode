@@ -1,0 +1,10 @@
+package stringDay4;
+
+public class Assingment8 
+{
+     public static void main(String[] args) {
+		/****************Find**First**Occurrence**of**character**in**String****/
+    	  String s="america";
+    	  
+	}
+}

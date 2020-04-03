@@ -1,0 +1,27 @@
+package cloningMethod;
+
+public class Student implements Cloneable
+{ 
+	int studId;
+   public	String studName;
+	int studMarks;
+	Course c;
+	
+	@Override
+	public Object clone() throws CloneNotSupportedException 
+	{
+		return super.clone();
+	}
+	
+	
+	  @Override 
+	  public String toString() 
+	  {
+		  System.out.println();
+	   return "studId="+studId+" "+"studName="+studName+" "+"studMarks="+studMarks+" "+"Course="+c; 
+	  }
+	 
+	  
+	 
+	
+}

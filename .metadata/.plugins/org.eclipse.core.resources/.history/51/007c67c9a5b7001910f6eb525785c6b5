@@ -1,0 +1,22 @@
+package stringDay3;
+
+public class Assignment5 
+{
+
+	public static void main(String[] args) 
+	{
+		String str1="robinkedari";
+		int count=0;
+		for(int i=0;i<str1.length();i++)
+		{
+			str1.charAt(i);
+			
+			count++;
+		}
+		System.out.println(count);
+		
+		
+
+	}
+
+}

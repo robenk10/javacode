@@ -1,0 +1,36 @@
+package com.FlipkartQ;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Order> al=new ArrayList();
+		
+		HashMap<String ,String > hs=new HashMap();
+		
+		Scanner sc=new Scanner(System.in);
+		
+		
+		for(int i=1;i<4;i++)
+		{ 
+			System.out.println("Adding element");
+			int id=sc.nextInt();
+			String city=sc.next();
+			String itemName=sc.next();
+			String status=sc.next();
+			
+			al.add(new Order(id,city,itemName,status));
+		}
+		
+		
+    
+		 
+		 
+		
+	}
+
+}

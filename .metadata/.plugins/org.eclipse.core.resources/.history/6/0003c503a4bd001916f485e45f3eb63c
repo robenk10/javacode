@@ -1,0 +1,25 @@
+package stringDay3;
+
+public class Assignment7 
+{
+
+	public static void main(String[] args) 
+	{
+		String str="java is java good java programming java language";
+		String[] str1=str.split(" ");
+		
+	    int count=1;
+
+		for(int i=0;i<str1.length;i++)
+		{
+			if(str1[i]=="java")
+			{
+				count++;
+				System.out.println("The first occurrence word in String is "+count);
+
+			}
+
+		}
+	}
+
+}

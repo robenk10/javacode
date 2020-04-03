@@ -1,0 +1,27 @@
+package stringDay3;
+
+public class Assignment7 
+{
+
+	public static void main(String[] args) 
+	{  
+		
+		String str="java is java good java programming java language";
+		String[] str2=str.split(" ", 8);
+		 int counter=1;
+		 int i=0;
+		for( ;i<str2.length;i++)
+		{
+			if(str2[i]=="java")
+			{
+				counter++;
+				
+			}
+			
+		}
+		System.out.println(str2[i]+ " The words first occurrence of String is "+counter +"times");
+		
+		
+	}
+
+}

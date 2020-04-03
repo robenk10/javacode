@@ -1,0 +1,16 @@
+package com.basic;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		System.out.println("hello");
+		
+         Scanner sc=new Scanner(System.in);
+          
+         int num1=sc.nextInt();
+         System.out.println(num1);
+	}
+
+}

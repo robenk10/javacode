@@ -1,0 +1,30 @@
+package inheritanceusingAbstractclass;
+
+abstract class Parent
+{   
+	abstract void cook();
+	void wash()
+	{
+       System.out.println("Wash method in parent");
+	}
+	
+	Parent(int i,String s,String ss)
+	{
+		
+	}
+}
+class Child extends Parent
+{
+	void  cook()
+	{
+      int a=90;
+      System.out.println(a);
+	}
+
+}
+public class InheritanceusingAbstractclass1 
+
+
+{
+
+}

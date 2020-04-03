@@ -1,0 +1,51 @@
+package inheritanceusingAbstractclass;
+
+abstract class Parent
+{   int i=10;
+    String s;
+    String ss;
+	abstract void cook();
+	void wash()
+	{
+       System.out.println("Wash method in parent");
+	}
+	Parent()
+	{
+		System.out.println("In Default Constructor");
+	}
+	
+	Parent(int i,String s,String ss)
+	{
+		this.i=i;
+		this.s=s;
+		this.ss=ss;
+	}
+}
+class Child extends Parent
+{
+	Child(int i, String s, String ss) {
+		super(i, s, ss);
+		
+	}
+
+	void  cook()
+	{
+      int a=90;
+      System.out.println(a);
+	}
+
+	@Override
+	public String toString() {
+		return "Child [i=" + i + ", s=" + s + ", ss=" + ss + "]";
+	}
+	
+
+}
+
+
+public class InheritanceusingAbstractclass1 
+
+
+{
+
+}

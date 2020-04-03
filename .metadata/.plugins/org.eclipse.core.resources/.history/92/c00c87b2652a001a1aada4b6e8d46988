@@ -1,0 +1,99 @@
+package com.FlipkartQ;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Order> al=new ArrayList();
+		
+		HashMap<String ,Integer> hs=new HashMap();
+		
+		
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("details of Adding element");
+		for(int i=1;i<8;i++)
+		{ 
+			
+			int id=sc.nextInt();
+			String city=sc.next();
+			String itemName=sc.next();
+			String status=sc.next();
+			
+			al.add(new Order(id,city,itemName,status));
+		}
+		
+		
+		Order [ ] o=new Order[al.size()];
+		for(int i=0;i<al.size();i++)
+		{
+			o[i]=al.get(i);
+		}
+		Integer count1=0;
+		boolean flag=false;
+		
+		for(int i=0;i<o.length;i++)
+		{   
+			count1=1;
+			flag=false;
+		    for(int j=i-1;j>=0;j--)
+		    {
+		    	if((o[i].city.equals(o[j].city)))
+		    	{
+		    		flag=true;
+		    	}
+		    }
+		    
+		    if(flag==false)
+		    {
+		    	for(int k=i+1;k<o.length;k++)
+		    	{
+		    		if(o[i].Status.equalsIgnoreCase("pending")||(o[i].city.equalsIgnoreCase(o[k].city)))
+		    		{
+		    			count1++;
+		    		}
+		    		
+		    	}
+		    	 hs.put(o[i].city, count1);
+		    }
+		   
+		   
+		}
+		
+		
+		
+		TreeMap <String ,Integer> tm=new TreeMap(hs);
+		
+        
+		Set s=tm.entrySet();
+		
+		Iterator itr1=s.iterator();
+		while(itr1.hasNext())
+		{
+			Map.Entry m=(Entry) itr1.next();
+				String s1=(String) m.getKey();
+				Integer i1=(Integer) m.getValue();
+				System.out.println(s1+"  "+"pending Order is::"+i1);
+				
+			
+		}
+		
+	
+		
+		 
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.TechnicalInterviewQ;
+
+public class PirmeNumber {
+
+	public static void main(String[] args) {
+		
+		int num=20;
+		int count=0;
+		int sum=0;
+		for(int i=1; i<num; i++) {
+			count=0;
+			for(int j=2; j<i; j++) {
+				if(i%j==0) {
+					count++;
+					}
+			}
+			
+			if(count==0) {
+				int primesum=(2*i)+1;
+				if(primesum<20) {
+					sum=sum+primesum;}
+				System.out.print(i+" ");	
+			}
+		
+		}
+	
+		
+		/*int [] arr= {38,88,23,23,23};
+		
+		int count=0;
+		for(int i=0; i<arr.length; i++) {
+			
+			for(int j=i+1; j<arr.length; j++) {
+				int pair=0;
+			    pair=arr[i]+arr[j];
+				if(pair%3==0) {
+					count++;
+				}
+			}
+		}
+		System.out.println(count);*/
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package stringDay4;
+
+public class Assingment8 
+{
+	public static void main(String[] args) {
+          
+		String s="you cannot change me";
+		String s1="you cannot change me";
+		System.out.println(s==s1);
+		String s2=new String("you cannot change me");
+		String s3=new String("you cannot change me");
+		System.out.println(s2==s3);
+		System.out.println(s==s3);
+		String s4="you cannot ";
+		String s5="change me";
+		String s6="you cannot"+"change me";
+		String s7=s4+s5;
+		System.out.println(s6==s7);
+		String s8="you cannot"+s5;
+		System.out.println(s6==s8);
+		final String s9="you cannot";
+		String s10=s9+"change me";
+		System.out.println(s10==s6);
+		System.out.println(s4==s9);
+		
+	}
+}
